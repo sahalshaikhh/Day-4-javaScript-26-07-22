@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="A1">Enter value</label>
+    <input type="text" id="A1"/>
+
+
+    <label for="B1">Enter value</label>
+    <input type="text" id="B1"/><br>
+    <p id="sumps"></p>
+<input type="button" onclick="sum()" value="sum">Calculate</button>
+<script>
+ function sum(){
+    var fnum=document.getElementById("A1").value;
+    var lnum=document.getElementById("B1").value;
+
+    var sum=fnum+lnum;
+      document.getElementById("sumps").innerHTML=sum;
+ }
+</script>
+
+</body>
+</html>
